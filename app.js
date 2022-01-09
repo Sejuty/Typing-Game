@@ -42,12 +42,13 @@ async function renderNewQuote() {
     quoteDisplay.appendChild(charSpan);
   });
   quoteInput.value = null;  
-  startTimer();
+  start();
+  
 }
 
 let startTime;
 
-function startTimer()
+const start = ()=> 
 {
   timer.innerText =0;
   startTimer = new Date();
